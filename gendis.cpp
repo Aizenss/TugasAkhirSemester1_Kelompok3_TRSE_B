@@ -65,6 +65,5 @@ int main(){
     while (answer == 'Y' || answer == 'y'){
         goto jump;
     }
-
-    return 0;
 }
+
