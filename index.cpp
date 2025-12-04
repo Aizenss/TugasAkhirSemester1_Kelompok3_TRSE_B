@@ -13,6 +13,47 @@ void And(){
     }
 }
 
+void Not(){
+    cout<<"Tabel Kebenaran NOT\n";
+    cout<<left<<setw(5)<<"A"<<" | Output\n";
+    cout<<"-------------------\n";
+    for (int a = 0; a <= 1; a++){
+        cout<<left<<setw(5)<<a<<" | "<< (!a) <<endl;
+    }
+}
+
+void Nor(){
+    cout<<"Tabel Kebenaran NOR\n";
+    cout<<left<<setw(5)<<"B"<<setw(5)<<"A"<<" | Output\n";
+    cout<<"------------------------\n";
+    for (int i = 0; i <= 1; i++){
+        for (int j = 0; j <= 1; j++){
+            cout<<left<<setw(5)<<i<<setw(5)<<j<<" | "<< (i && j) <<endl;
+        }
+    }
+}
+
+void XorGate() {
+    cout << "Tabel Kebenaran XOR\n";
+    cout << left << setw(5) << "B" << setw(5) << "A" << " | " << "Output\n";
+    cout << "------------------------\n";
+    for (int i = 0; i <= 1; i++) {
+        for (int j = 0; j <= 1; j++) {
+            cout << left << setw(5) << i << setw(5) << j << " | " << (i ^ j) << endl;
+        }
+    }
+}
+
+void XnorGate() {
+    cout << "Tabel Kebenaran XNOR\n";
+    cout << left << setw(5) << "B" << setw(5) << "A" << " | " << "Output\n";
+    cout << "------------------------\n";
+    for (int i = 0; i <= 1; i++) {
+        for (int j = 0; j <= 1; j++) {
+            cout << left << setw(5) << i << setw(5) << j << " | " << !(i ^ j) << endl;
+        }
+    }
+}
 
 int main(){
     int input;
