@@ -44,7 +44,7 @@ jump:  cout << "\n\n1. AND\n2. OR\n3. NOT\n4. NAND\n5. NOR\n6. XOR\n7. XNOR\n";
             goto jump;
         }; break;
     case 7:
-        XorGate();
+        XnorGate();
         cout << "\nApakah Anda Ingin Melihat Tabel Kebenaran Dari Gerbang Logika Lainnya ? (Y/N) : ";
         cin >> answer;
         while (answer == 'Y' || answer == 'y') {
