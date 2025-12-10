@@ -3,16 +3,19 @@
 using namespace std;
 
 void Not(){
-    cout<<"Tabel Kebenaran NOT\n";
+    cout<<"Tabel Kebenaran Gerbang Logika NOT\n";
     cout<<left<<setw(5)<<"A"<<" | Output\n";
     cout<<"-------------------\n";
     for (int a = 0; a <= 1; a++){
         cout<<left<<setw(5)<<a<<" | "<< (!a) <<endl;
     }
+    cout<<"Gerbang logika NOT adalah gerbang yang berfungsi membalikkan sinyal input."
+        <<" Jika input bernilai 1 maka outputnya 0, dan jika input 0 maka outputnya 1."
+        <<" Gerbang ini dikenal sebagai inverter dan menjadi dasar dalam membangun rangkaian digital kompleks."<<endl;
 }
 
 void Nor(){
-    cout<<"Tabel Kebenaran NOR\n";
+    cout<<"Tabel Kebenaran Gerbang Logika NOR\n";
     cout<<left<<setw(5)<<"B"<<setw(5)<<"A"<<" | Output\n";
     cout<<"------------------------\n";
     for (int i = 0; i <= 1; i++){
@@ -20,6 +23,11 @@ void Nor(){
             cout<<left<<setw(5)<<i<<setw(5)<<j<<" | "<< !(i || j) <<endl;
         }
     }
+    cout<<"Gerbang NOR menghasilkan keluaran 1 hanya jika semua masukan bernilai 0."
+        <<" Jika salah satu atau kedua input bernilai 1, maka output bernilai 0."
+        <<" Gerbang NOR adalah kebalikan dari OR dan merupakan salah satu gerbang universal,"
+        <<" sehingga dapat membentuk semua fungsi logika lain seperti AND, OR, dan NOT."
+        <<" NOR sangat penting dalam membangun memori (latch/flip-flop) serta logika kontrol pada sistem digital kompleks seperti komputer dan robotika."<<endl;
 }
 
 void And(){
@@ -66,5 +74,6 @@ int main(){
         goto jump;
     }
 }
+
 
 
