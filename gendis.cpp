@@ -17,7 +17,7 @@ void Nor(){
     cout<<"------------------------\n";
     for (int i = 0; i <= 1; i++){
         for (int j = 0; j <= 1; j++){
-            cout<<left<<setw(5)<<i<<setw(5)<<j<<" | "<< (i && j) <<endl;
+            cout<<left<<setw(5)<<i<<setw(5)<<j<<" | "<< !(i || j) <<endl;
         }
     }
 }
@@ -66,4 +66,5 @@ int main(){
         goto jump;
     }
 }
+
 
