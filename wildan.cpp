@@ -11,6 +11,7 @@ void XorGate() {
             cout << left << setw(5) << i << setw(5) << j << " | " << (i ^ j) << endl;
         }
     }
+    cout << "\nGerbang XOR adalah singkatan dari Exclusive OR, Berbeda dengan gerbang OR biasa \nyang bernilai 1 jika salah satu atau keduanya inputnya bernilai 1, XOR bersifat \neksklusif. Artinya, ia hanya akan menghasilkan output 1 jika salah satu inputnya \nbernilai 1, dan jika kedua inputnya bernilai sama 1 atau 0 maka outputnya bernilai 0"<<endl;
 }
 
 void XnorGate() {
@@ -22,6 +23,7 @@ void XnorGate() {
             cout << left << setw(5) << i << setw(5) << j << " | " << !(i ^ j) << endl;
         }
     }
+    cout << "\nXNOR adalah kebalikan dari XOR. XNOR merupakan gabungan dari gerbang XOR \nyang diikuti oleh gerbang NOT.Karena itu, gerbang ini sering disebut sebagai \nEquivalence Gate, gerbang Xnor akan menghasilkan output 1 jika kedua input \nbernilai sama 1 atau 0 dan jika salah satu input berbeda 1 atau 0 maka outputnya bernilai 0"<<endl;
 }
 
 int main() {
